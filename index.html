@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/Script.js"></script>
+    </head>
+    <body>
+        <div id="name">
+            <label>Name:</label><input type="text" placeholder="Rosta" id="username" onchange="checkButton()" />
+            <br>
+            <input id="play" type="button" value="Play" onclick="saveName()">
+            <div style="clear:both"></div>
+        </div>
+        <div style="clear:both"></div>
+        <div id="container">
+            <div id="score">
+                <label style="float: left">Time:&nbsp;&nbsp;</label><p id="timer" time-val="0">0:00</p>
+                <label style="float: left">Clicks:&nbsp;&nbsp;</label><p id="clicks">0</p>
+            </div>
+            <div id="history">
+                <input id="viewHistory" type="button" value="History" onclick="viewHistory()"><br>
+                <input id="restart" type="button" value="Restart" onclick="restart()">
+            </div>
+            <div id="overlay"></div>
+            <table id="game"></table>
+        </div>
+    </body>
+</html>
